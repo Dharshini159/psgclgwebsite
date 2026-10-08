@@ -1,0 +1,814 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PSG College of Technology</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="top-bar">
+
+        <p>
+            PSG College of Technology | Coimbatore
+        </p>
+
+        <p>
+            📞 +91 422 257 2177
+        </p>
+
+    </div>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-box">
+                PSG
+            </div>
+
+            <div>
+                <h2>PSG COLLEGE</h2>
+                <span>OF TECHNOLOGY</span>
+            </div>
+
+        </div>
+
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#departments">Departments</a>
+            </li>
+
+            <li>
+                <a href="#facilities">Facilities</a>
+            </li>
+
+            <li>
+                <a href="#admissions">Admissions</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            WELCOME TO
+        </p>
+
+        <h1>
+            PSG College of Technology
+        </h1>
+
+        <p>
+            Excellence in Engineering, Technology
+            and Education
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#about" class="btn primary">
+                Explore College
+            </a>
+
+            <a href="#admissions" class="btn secondary">
+                Admissions
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= NOTICE ================= -->
+
+<section class="notice">
+
+    <div class="notice-title">
+        📢 NOTICE
+    </div>
+
+    <div class="notice-text">
+
+        Admissions and academic updates will be
+        published here.
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="section-heading">
+
+        <p>ABOUT US</p>
+
+        <h2>
+            About PSG College of Technology
+        </h2>
+
+    </div>
+
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80"
+                alt="College Campus"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <h3>
+                Building Engineers for Tomorrow
+            </h3>
+
+            <p>
+                PSG College of Technology is a renowned
+                institution dedicated to engineering,
+                technology and higher education.
+            </p>
+
+            <p>
+                The institution provides students with
+                opportunities to develop technical knowledge,
+                research skills and professional excellence.
+            </p>
+
+            <button class="read-btn"
+                    onclick="showAboutMessage()">
+
+                Read More
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="statistics">
+
+    <div class="stat">
+
+        <h2>1951</h2>
+
+        <p>
+            Established
+        </p>
+
+    </div>
+
+
+    <div class="stat">
+
+        <h2>40+</h2>
+
+        <p>
+            Departments & Programs
+        </p>
+
+    </div>
+
+
+    <div class="stat">
+
+        <h2>1000+</h2>
+
+        <p>
+            Faculty & Staff
+        </p>
+
+    </div>
+
+
+    <div class="stat">
+
+        <h2>10000+</h2>
+
+        <p>
+            Students & Alumni
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DEPARTMENTS ================= -->
+
+<section class="departments"
+         id="departments">
+
+    <div class="section-heading">
+
+        <p>ACADEMICS</p>
+
+        <h2>
+            Departments
+        </h2>
+
+        <span>
+            Explore our major academic disciplines.
+        </span>
+
+    </div>
+
+
+    <div class="department-container">
+
+
+        <div class="department-card">
+
+            <div class="department-icon">
+                💻
+            </div>
+
+            <h3>
+                Computer Science
+            </h3>
+
+            <p>
+                Computer science, software development,
+                artificial intelligence and computing.
+            </p>
+
+            <button
+                onclick="showDepartment('Computer Science')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+
+
+        <div class="department-card">
+
+            <div class="department-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Electrical & Electronics
+            </h3>
+
+            <p>
+                Electrical systems, electronics,
+                automation and modern technologies.
+            </p>
+
+            <button
+                onclick="showDepartment('Electrical and Electronics')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+
+
+        <div class="department-card">
+
+            <div class="department-icon">
+                ⚙️
+            </div>
+
+            <h3>
+                Mechanical Engineering
+            </h3>
+
+            <p>
+                Design, manufacturing, machines
+                and industrial engineering.
+            </p>
+
+            <button
+                onclick="showDepartment('Mechanical Engineering')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+
+
+        <div class="department-card">
+
+            <div class="department-icon">
+                🏗️
+            </div>
+
+            <h3>
+                Civil Engineering
+            </h3>
+
+            <p>
+                Construction, infrastructure,
+                structural and environmental engineering.
+            </p>
+
+            <button
+                onclick="showDepartment('Civil Engineering')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+
+
+        <div class="department-card">
+
+            <div class="department-icon">
+                📡
+            </div>
+
+            <h3>
+                Electronics & Communication
+            </h3>
+
+            <p>
+                Communication systems, electronics,
+                embedded systems and signal processing.
+            </p>
+
+            <button
+                onclick="showDepartment('Electronics and Communication')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+
+
+        <div class="department-card">
+
+            <div class="department-icon">
+                🧪
+            </div>
+
+            <h3>
+                Applied Sciences
+            </h3>
+
+            <p>
+                Mathematics, physics, chemistry
+                and foundational sciences.
+            </p>
+
+            <button
+                onclick="showDepartment('Applied Sciences')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROGRAMS ================= -->
+
+<section class="programs">
+
+    <div class="section-heading">
+
+        <p>PROGRAMMES</p>
+
+        <h2>
+            Academic Programmes
+        </h2>
+
+    </div>
+
+
+    <div class="program-container">
+
+
+        <div class="program-card">
+
+            <h3>
+                Undergraduate
+            </h3>
+
+            <p>
+                B.E / B.Tech programmes
+                across engineering disciplines.
+            </p>
+
+            <a href="#admissions">
+                View Programmes →
+            </a>
+
+        </div>
+
+
+        <div class="program-card">
+
+            <h3>
+                Postgraduate
+            </h3>
+
+            <p>
+                M.E / M.Tech programmes
+                for advanced technical education.
+            </p>
+
+            <a href="#admissions">
+                View Programmes →
+            </a>
+
+        </div>
+
+
+        <div class="program-card">
+
+            <h3>
+                Research
+            </h3>
+
+            <p>
+                Research programmes and opportunities
+                for innovation and discovery.
+            </p>
+
+            <a href="#admissions">
+                Explore Research →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FACILITIES ================= -->
+
+<section class="facilities"
+         id="facilities">
+
+    <div class="section-heading">
+
+        <p>CAMPUS</p>
+
+        <h2>
+            Campus Facilities
+        </h2>
+
+    </div>
+
+
+    <div class="facility-container">
+
+
+        <div class="facility">
+
+            <span>📚</span>
+
+            <h3>
+                Central Library
+            </h3>
+
+            <p>
+                Learning resources and digital
+                academic materials.
+            </p>
+
+        </div>
+
+
+        <div class="facility">
+
+            <span>🔬</span>
+
+            <h3>
+                Laboratories
+            </h3>
+
+            <p>
+                Modern laboratories for practical
+                learning and research.
+            </p>
+
+        </div>
+
+
+        <div class="facility">
+
+            <span>🏃</span>
+
+            <h3>
+                Sports
+            </h3>
+
+            <p>
+                Sports facilities for student
+                fitness and activities.
+            </p>
+
+        </div>
+
+
+        <div class="facility">
+
+            <span>🏠</span>
+
+            <h3>
+                Hostels
+            </h3>
+
+            <p>
+                Comfortable residential facilities
+                for students.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ADMISSIONS ================= -->
+
+<section class="admissions"
+         id="admissions">
+
+    <div class="section-heading">
+
+        <p>ADMISSIONS</p>
+
+        <h2>
+            Enquiry Form
+        </h2>
+
+        <span>
+            Interested students can submit an enquiry.
+        </span>
+
+    </div>
+
+
+    <form id="admissionForm">
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Programme
+                </label>
+
+                <select id="programme" required>
+
+                    <option value="">
+                        Select Programme
+                    </option>
+
+                    <option>
+                        B.E / B.Tech
+                    </option>
+
+                    <option>
+                        M.E / M.Tech
+                    </option>
+
+                    <option>
+                        Research Programme
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <button type="submit"
+                class="submit-btn">
+
+            Submit Enquiry
+
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact"
+         id="contact">
+
+    <div class="contact-container">
+
+
+        <div>
+
+            <p class="section-title">
+                CONTACT
+            </p>
+
+            <h2>
+                Get In Touch
+            </h2>
+
+            <p>
+                📍 Peelamedu, Coimbatore,
+                Tamil Nadu - 641004
+            </p>
+
+            <p>
+                📞 +91 422 257 2177
+            </p>
+
+            <p>
+                ✉️ info@example.com
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>
+                PSG College of Technology
+            </h3>
+
+            <p>
+                Coimbatore, Tamil Nadu
+            </p>
+
+            <button
+                onclick="showContactMessage()">
+
+                Contact Us
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        PSG COLLEGE OF TECHNOLOGY
+
+    </div>
+
+    <p>
+        Student Project Website
+    </p>
+
+    <p>
+        © 2026 All Rights Reserved
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```
